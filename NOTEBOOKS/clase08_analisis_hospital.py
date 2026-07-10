@@ -23,8 +23,9 @@ def es_adulto_mayor(edad):
 # REQUERIMIENTO 1:
 # Construya aqui la lectura del JSON con el docente.
 # Al terminar, la variable pacientes debe tener 15 registros.
-pacientes = []
 
+with open(ARCHIVO_DATOS,'r') as archivo:
+    pacientes = json.load(archivo)
 
 # 2. Exploracion inicial
 print("Cantidad de pacientes:", len(pacientes))
